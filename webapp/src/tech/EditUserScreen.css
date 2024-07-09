@@ -1,0 +1,85 @@
+/* Styling for invalid feedback messages */
+.invalid-feedback {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Styling for ReactModal overlay */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for ReactModal content */
+.ReactModal__Content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+}
+
+/* Styling for edit forms */
+.edit-form {
+    padding: 20px;
+}
+
+.edit-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Styling for tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Bottom border for table cells */
+}
+
+.table td:first-child {
+    font-weight: bold;
+    width: 10%;
+    white-space: nowrap; /* Prevent wrapping of text */
+    vertical-align: top; /* Vertical alignment */
+}
+
+.table td:last-child {
+    width: 30%;
+    vertical-align: center; /* Vertical alignment */
+}
+
+.table td label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for form controls within table cells */
+.table td .form-control {
+    width: 60%; /* Adjust the width as needed */
+    /* Add other styling properties as needed */
+    vertical-align: middle; /* Vertical alignment */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Styling for invalid form controls within table cells */
+.table td .form-control.is-invalid {
+    border-color: red; /* Red border for invalid input */
+}
+
+/* Styling for edit buttons */
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end; /* Right-align buttons */
+    margin-top: 20px;
+}
+
+.edit-buttons button {
+    margin-left: 10px; /* Add space between buttons */
+}

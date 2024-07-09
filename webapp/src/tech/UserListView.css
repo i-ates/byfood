@@ -1,0 +1,50 @@
+/* Styles for the .custom-table class */
+.custom-table {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Styles for table headers and table data inside .custom-table */
+.custom-table th,
+.custom-table td {
+    border: 1px solid #dee2e6;
+}
+
+/* Styles for table data inside .custom-table */
+.custom-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Styles for the first table header in .custom-table */
+.custom-table th:nth-child(1) {
+    width: 30%;
+}
+
+/* Styles for the second table header in .custom-table */
+.custom-table th:nth-child(2) {
+    width: 30%;
+}
+
+/* Styles for the third table header in .custom-table */
+.custom-table th:nth-child(3) {
+    width: 30%;
+}
+
+/* Styles for the fourth table header in .custom-table */
+.custom-table th:nth-child(4) {
+    width: 5%;
+}
+
+/* Styles for the .custom-edit-button class */
+.custom-edit-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+}
+
+/* Hover styles for the .custom-edit-button class */
+.custom-edit-button:hover {
+    background-color: #dcd295;
+}

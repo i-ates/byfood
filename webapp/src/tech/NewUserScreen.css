@@ -1,0 +1,84 @@
+/* Styling for invalid feedback messages */
+.invalid-feedback {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Styling for ReactModal overlay */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for ReactModal content */
+.ReactModal__Content {
+    background-color: white; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for a subtle effect */
+}
+
+/* Styling for edit forms */
+.edit-form {
+    padding: 20px; /* Padding around the form */
+}
+
+.edit-form h2 {
+    margin-bottom: 20px; /* Margin below the form title */
+}
+
+/* Styling for tables */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for table cells */
+    margin-bottom: 20px; /* Margin below the table */
+}
+
+.table td {
+    padding: 10px; /* Padding for table cells */
+    border-bottom: 1px solid #ddd; /* Bottom border for table cells */
+}
+
+.table td:first-child {
+    font-weight: bold; /* Bold font for the first cell in each row */
+    width: 10%; /* Set width for the first cell */
+    white-space: nowrap; /* Prevent text from wrapping */
+    vertical-align: top; /* Vertical alignment */
+}
+
+.table td:last-child {
+    width: 30%; /* Set width for the last cell */
+    vertical-align: center; /* Vertical alignment */
+}
+
+.table td label {
+    font-weight: bold; /* Bold font for labels */
+    display: block; /* Display labels as blocks */
+    margin-bottom: 5px; /* Margin below labels */
+}
+
+/* Styling for form controls within table cells */
+.table td .form-control {
+    width: 60%; /* Set width for form controls */
+    vertical-align: middle; /* Vertical alignment */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Styling for invalid form controls within table cells */
+.table td .form-control.is-invalid {
+    border-color: red; /* Red border for invalid input */
+}
+
+/* Styling for edit buttons */
+.edit-buttons {
+    display: flex; /* Display buttons in a row */
+    justify-content: flex-end; /* Right-align buttons */
+    margin-top: 20px; /* Margin above the buttons */
+}
+
+.edit-buttons button {
+    margin-left: 10px; /* Add space between buttons */
+}

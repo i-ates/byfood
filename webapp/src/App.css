@@ -1,0 +1,66 @@
+/* Apply margin and padding to the body, set font size */
+body {
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: larger;
+}
+
+/* Media query for screens with a minimum width of 800px */
+@media screen and (min-width: 800px) {
+    body {
+        /* Increase padding for larger screens */
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+/* Media query for screens with a minimum width of 1600px */
+@media screen and (min-width: 1600px) {
+    body {
+        /* Maintain padding for even larger screens */
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+/* Style for displaying code */
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    background-color: #b3e6ff;
+}
+
+/* Center-align text with the "title" class */
+.title {
+    text-align: center;
+}
+
+/* Center-align text with the "logo" class */
+.logo {
+    text-align: center;
+}
+
+/* Style for a video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+
+    object-fit: cover;
+}
+
+/* Style for the video element within the video background */
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

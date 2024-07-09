@@ -1,0 +1,13 @@
+/* Reset margin to 0 for the entire page */
+body {
+    margin: 0;
+
+    /* Define a list of preferred system fonts for text */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    /* Improve font rendering and smoothing */
+    -webkit-font-smoothing: antialiased; /* For webkit-based browsers like Chrome */
+    -moz-osx-font-smoothing: grayscale; /* For macOS-based browsers like Safari */
+}
