@@ -1,5 +1,7 @@
 # An Old Assignment Task for ByFood
 
+![Alt Text](static/mainview.gif)
+
 ## Environment setup
 
 You need to have [Go](https://golang.org/),
