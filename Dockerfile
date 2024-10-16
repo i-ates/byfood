@@ -20,9 +20,8 @@ FROM mongo:6.0.3 as mongodb
 # Final stage with minimal Alpine + MongoDB binaries
 FROM alpine:3.16.3
 
-# Copy MongoDB binaries from MongoDB image
+# Copy MongoDB server binary (mongod) from MongoDB image
 COPY --from=mongodb /usr/bin/mongod /usr/bin/mongod
-COPY --from=mongodb /usr/bin/mongo /usr/bin/mongo
 
 # Create MongoDB data directory
 RUN mkdir -p /data/db
