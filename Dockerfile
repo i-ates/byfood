@@ -14,11 +14,15 @@ RUN go mod download
 COPY server ./
 RUN go build -o /go/bin/server
 
-# Final stage with minimal base (Alpine + MongoDB)
+# Final stage with minimal base (using MongoDB official image)
+FROM mongo:6.0.3 as mongodb
+
+# Final stage with minimal Alpine + MongoDB binaries
 FROM alpine:3.16.3
 
-# Install MongoDB binaries only, no additional dev packages
-RUN apk update && apk add --no-cache mongodb mongodb-tools
+# Copy MongoDB binaries from MongoDB image
+COPY --from=mongodb /usr/bin/mongod /usr/bin/mongod
+COPY --from=mongodb /usr/bin/mongo /usr/bin/mongo
 
 # Create MongoDB data directory
 RUN mkdir -p /data/db
@@ -31,4 +35,4 @@ COPY --from=go_build /go/bin/server ./server
 EXPOSE 8080 27017
 
 # Run MongoDB in background and then start Go server
-CMD mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db && ./server
+CMD mongod --dbpath /data/db --logpath /var/log/mongodb.log --fork && ./server
